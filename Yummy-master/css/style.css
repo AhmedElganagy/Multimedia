@@ -1,0 +1,38 @@
+body {
+  background-color: #0d0d0d;
+  color: #f9f6f6 !important;
+  overflow: hidden;
+}
+
+#loadingScreen {
+  display: flex;
+  z-index: 999;
+}
+
+#innerLoadingScreen {
+  position: absolute;
+  z-index: -1;
+  background-color: #0d0d0d;
+  display: flex;
+}
+
+i,
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.links ul li {
+  padding-block: 8px;
+}
+
+.meal-layer {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  top: 150%;
+  transition: top 0.5s;
+}
+
+.meal:hover .meal-layer {
+  top: 0;
+}
